@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #0d1117;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Botón volver */
+.btn-volver{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+
+    text-decoration: none;
+    color: black;
+    background: cyan;
+
+    padding: 12px 20px;
+    border-radius: 10px;
+
+    font-weight: bold;
+}
+
+.btn-volver:hover{
+    transform: scale(1.05);
+}
+
+/* Contenido */
+.proyecto{
+    width: 80%;
+    max-width: 1000px;
+
+    margin: 80px auto;
+
+    text-align: center;
+}
+
+.titulo{
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.imagen{
+    width: 1000px;
+    max-width: 100%;
+
+    border-radius: 15px;
+
+    margin-bottom: 30px;
+}
+
+.descripcion{
+    font-size: 22px;
+    line-height: 1.8;
+
+    width: 80%;
+    margin: auto;
+}
