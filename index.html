@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio de Iglesias: estudiante de desarrollo de software en Tecsup. Proyectos en Python, HTML y CSS.">
+    <meta name="theme-color" content="#07090f">
+    <title>Iglesias | Portafolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="progreso" id="progreso" aria-hidden="true"></div>
+
+    <header class="nav" id="nav">
+        <a href="#inicio" class="logo">print("Iglesias")</a>
+        <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+            <span></span><span></span><span></span>
+        </button>
+        <nav id="menu" aria-label="Principal">
+            <a href="#sobre">Sobre mí</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#skills">Skills</a>
+            <a href="#testi">Testimonios</a>
+            <a href="#redes">Redes</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-texto">
+                <p class="terminal"><span class="prompt">&gt;&gt;&gt;</span> <span id="tipeo" aria-live="off"></span><span class="cursor"></span></p>
+                <h1>Hola, soy Iglesias</h1>
+                <p class="lead">Desarrollador y diseñador de software. Estudio en Tecsup y mejoro un poco cada día, programando y dibujando.</p>
+                <div class="acciones">
+                    <a href="#proyectos" class="btn">Ver mis proyectos</a>
+                    <a href="#contacto" class="btn btn-sec">Contactarme</a>
+                </div>
+            </div>
+            <div class="hero-img">
+                <img src="img/perfil.png" alt="Ilustración digital de Iglesias, dibujada por él mismo" class="foto-perfil" width="420" height="380">
+            </div>
+        </section>
+
+        <section id="sobre">
+            <h2 class="titulo">Sobre mí</h2>
+            <div class="sobre-grid">
+                <p class="sobre-texto">
+                    Me gusta el diseño web moderno y la programación. Trabajo sobre todo con Python, C++ y Java,
+                    y combino el código con arte digital para que lo que construyo también se vea bien.
+                </p>
+                <ul class="datos">
+                    <li><strong>Estudio</strong> Tecsup</li>
+                    <li><strong>Lenguajes</strong> Python, C++, Java</li>
+                    <li><strong>Web</strong> HTML, CSS y JavaScript</li>
+                    <li><strong>Extra</strong> Arte digital</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="proyectos">
+            <h2 class="titulo">Proyectos</h2>
+            <div class="grid-proyectos">
+                <a class="proyecto" href="proPython.html">
+                    <img src="img/python.jpg" alt="Logo de Python" loading="lazy">
+                    <div>
+                        <h3>Python</h3>
+                        <p>Ejercicios de lógica y programas que he resuelto: listas, ciclos, funciones y una calculadora.</p>
+                        <span class="ver">Ver proyectos</span>
+                    </div>
+                </a>
+                <a class="proyecto" href="proHtml.html">
+                    <img src="img/html.png" alt="Logos de HTML5 y CSS3" loading="lazy">
+                    <div>
+                        <h3>HTML y CSS</h3>
+                        <p>Mi primera página web y el diseño de sitios con HTML y CSS.</p>
+                        <span class="ver">Ver proyecto</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2 class="titulo">Skills</h2>
+            <div class="grid-skills">
+                <div class="skill" data-tilt><img src="img/html1.png" alt="" loading="lazy"><p>HTML</p></div>
+                <div class="skill" data-tilt><img src="img/css.jpg" alt="" loading="lazy"><p>CSS</p></div>
+                <div class="skill" data-tilt><img src="img/python.jpg" alt="" loading="lazy"><p>Python</p></div>
+                <div class="skill" data-tilt><img src="img/c++.png" alt="" loading="lazy"><p>C++</p></div>
+                <div class="skill" data-tilt><img src="img/java.png" alt="" loading="lazy"><p>Java</p></div>
+                <div class="skill" data-tilt><img src="img/arte digital.png" alt="" loading="lazy"><p>Arte digital</p></div>
+            </div>
+        </section>
+
+        <section id="testi">
+            <h2 class="titulo">Testimonios</h2>
+            <div class="grid-testi">
+                <figure class="testi">
+                    <img src="img/alonso.jpeg" alt="Foto de Alonso Banda" loading="lazy">
+                    <blockquote>Estudiante destacable por sus avances en su carrera.</blockquote>
+                    <figcaption>Alonso Banda</figcaption>
+                </figure>
+                <figure class="testi">
+                    <img src="img/fab.jpeg" alt="Avatar de Fabrizio Contreras" loading="lazy">
+                    <blockquote>Alguien que promete mejorar cada día que pasa.</blockquote>
+                    <figcaption>Fabrizio Contreras</figcaption>
+                </figure>
+                <figure class="testi">
+                    <img src="img/pallin.webp" alt="Imagen de perfil de Miguel Pallin" loading="lazy">
+                    <blockquote>Gran manejo del desarrollo de páginas web.</blockquote>
+                    <figcaption>Ing. Miguel Pallin</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="redes" class="redes">
+            <h2 class="titulo">Redes sociales</h2>
+            <p class="redes-txt">Subo mi arte digital y avances en TikTok.</p>
+            <a href="https://www.tiktok.com/@iglesiaslion?lang=es" target="_blank" rel="noopener noreferrer" class="btn-tiktok">Ir a mi TikTok</a>
+        </section>
+
+        <section id="contacto">
+            <h2 class="titulo">Contacto</h2>
+            <div class="contacto-grid">
+                <img src="img/perfil.png" alt="Mi ilustración" class="foto-contacto" loading="lazy">
+                <ul class="contacto-lista">
+                    <li>
+                        <span>Gmail</span>
+                        <a href="mailto:Varomojudo3@gmail.com">Varomojudo3@gmail.com</a>
+                        <button class="copiar" data-copiar="Varomojudo3@gmail.com">Copiar</button>
+                    </li>
+                    <li>
+                        <span>Discord</span>
+                        <code>1264327478034567280</code>
+                        <button class="copiar" data-copiar="1264327478034567280">Copiar</button>
+                    </li>
+                    <li><span>Institución</span> Tecsup</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Creado por el estudiante <strong>Leonardo Jesus Valderrama Alfaro</strong> (alias Iglesias)</p>
+    </footer>
+
+    <button class="subir" id="subir" aria-label="Volver arriba">↑</button>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
